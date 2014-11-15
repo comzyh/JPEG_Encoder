@@ -1,3 +1,6 @@
+#ifndef __BMP_H__
+#define __BMP_H__
+
 #pragma pack(push,2)//手动元素对齐
 struct BMPFileHeader //14 byte
 {
@@ -22,3 +25,4 @@ struct BMPInfoHeader //40byte
     uint32_t biClrUsed;             //位图使用的颜色索引数   4字节
     uint32_t biClrImportant;        //对图象显示有重要影响的颜色索引的数目  4字节
 };
+#endif
